@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { inclusions, noHeaderFooterUrls } from '../../../constants'
@@ -29,7 +30,15 @@ const FooterComponent = () => {
           ))}
         </ul>
       </Gutter>
-      <div className={classes.footer}></div>
+      <div className={classes.footer}>
+        <Gutter>
+          <div className={classes.wrap}>
+            <Link href="/">
+              <Image src="/logo-white.svg" width={170} height={50} alt="logo" />
+            </Link>
+          </div>
+        </Gutter>
+      </div>
     </footer>
   )
 }
