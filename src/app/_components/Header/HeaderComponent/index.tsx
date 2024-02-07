@@ -15,7 +15,7 @@ const HeaderComponent = ({ header }: { header: Header }) => {
   const pathname = usePathname()
 
   return (
-    <nav>
+    <nav className={[classes.header]}>
       <Gutter className={classes.wrap}>
         <Link href="/">
           <Image src="/logo-black.svg" alt="logo" width={170} height={50} />
