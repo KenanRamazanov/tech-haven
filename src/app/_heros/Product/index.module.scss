@@ -7,7 +7,6 @@
   @include mid-break {
     flex-direction: column;
     gap: var(--base);
-    
   }
 }
 
@@ -22,6 +21,7 @@
   @include mid-break {
     width: 100%;
     gap: calc(var(--base) / 2);
+
   }
 }
 
