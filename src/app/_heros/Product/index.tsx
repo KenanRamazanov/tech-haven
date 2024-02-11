@@ -21,8 +21,6 @@ export const ProductHero: React.FC<{
     categories,
     meta: { image: metaImage, description } = {},
   } = product
-
-  
   return (
     <Fragment>
       {!stripeProductID && (
