@@ -110,7 +110,6 @@ export async function generateMetadata(): Promise<Metadata> {
     // in production you may want to redirect to a 404  page or at least log the error somewhere
   }
 
-  
   if (!page) {
     page = staticCart
   }
